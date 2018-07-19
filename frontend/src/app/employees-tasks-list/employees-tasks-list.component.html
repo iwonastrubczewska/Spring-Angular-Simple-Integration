@@ -1,0 +1,9 @@
+
+
+<div *ngFor="let task of list ">
+  <br>
+  <ul class="list-group">
+    <li class="list-group-item"><app-task [task]="task" (reloadList)="employeesTasks()" ></app-task>
+</li>
+</ul>
+</div>

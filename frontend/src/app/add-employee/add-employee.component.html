@@ -1,0 +1,19 @@
+
+
+<div>
+  <form>
+  <div class="container" style="margin-left: 10px">
+  <label>Imię:</label>
+  <br>
+  <input type="text" name="name"  [(ngModel)]="employee.name" required/>  <br>
+  <label>Nazwisko:</label>  <br>
+  <input type="text" name="surname"  [(ngModel)]="employee.surname" required/>  <br>
+  <label>Email:</label>  <br>
+  <input type="text" name="email"  [(ngModel)]="employee.email" required />  <br><br>
+
+  
+  <button type="submit" class="btn btn-success" (click)="add()">Dodaj</button>
+</div>
+
+</form>
+</div>

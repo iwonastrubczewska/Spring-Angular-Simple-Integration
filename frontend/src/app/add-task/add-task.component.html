@@ -1,0 +1,22 @@
+<div>
+    <div class="container" style="margin-left: 10px">
+    <label>Zadanie: </label><br>
+    <input type="text" name="toDo" [(ngModel)]="task.toDo"/><br>
+
+    
+
+    <br>
+   <form>
+        <div>
+            <label for="deadline">Deadline: </label><br>
+            <input type="datetime-local" id="deadline" name="deadline"  [(ngModel)]="task.deadline" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}">
+             <span class="validity"></span>
+            </div>
+        </form>
+    
+    <br>
+
+
+    <button class="btn btn-success" (click)="add()">Dodaj</button>
+</div>
+  </div>

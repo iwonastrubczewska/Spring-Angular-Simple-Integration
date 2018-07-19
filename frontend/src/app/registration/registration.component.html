@@ -1,0 +1,25 @@
+<div>
+
+  <div id="loginbox" style="margin-top: 50px;"
+       class="mainbox col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-2">
+
+      <div class="panel panel-primary">
+
+          <div class="panel-heading">
+              <div class="panel-title">Rejestracja </div>
+          </div>
+
+          <div style="padding-top: 30px" class="panel-body">
+
+  <p>
+      Login: <input type="text" name="username" [(ngModel)]="user.username" />
+  </p>
+  <p>
+      Hasło: <input type="password" name="password" [(ngModel)]="user.password" />
+  </p>
+
+  <div style="margin-top: 10px" class="form-group">
+      <div class="col-sm-6 controls">
+          <button type="submit" class="btn btn-primary" (click)="registration()">Zaloguj</button>
+      </div>
+  </div>

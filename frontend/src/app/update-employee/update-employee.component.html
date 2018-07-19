@@ -1,0 +1,12 @@
+
+  <div>
+      <div class="container" style="margin-left: 10px">
+      <label>Imię:</label><br>
+      <input type="text" name="name" [(ngModel)]="employee.name"/><br>
+      <label>Nazwisko:</label><br>
+      <input type="text" name="surname"  [(ngModel)]="employee.surname"/><br>
+      <label>Email:</label><br>
+      <input type="text" name="email"  [(ngModel)]="employee.email"/><br><br>
+      <button (click)="update(employee.id, employee)" class="btn btn-success" > update </button>
+    </div>
+    </div>

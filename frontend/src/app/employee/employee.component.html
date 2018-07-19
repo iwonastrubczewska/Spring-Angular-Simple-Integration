@@ -1,0 +1,23 @@
+
+<div>
+   
+  <span><b> Imię: </b></span>{{employee.name}} <br>
+  <span><b> Nazwisko: </b></span>{{employee.surname}}<br>
+  <span><b> Email: </b></span>{{employee.email}}
+   
+<br>
+<br>
+
+  <a [routerLink]="['/update', employee.id]" class="btn btn-primary">Edytuj</a> 
+  <div class="space"></div>
+
+  <a [routerLink]="['/task/add', employee.id]" class="btn btn-primary">Dodaj zadanie</a> 
+  <div class="space"></div>
+
+  <a [routerLink]="['/employeestasks', employee.id]" class="btn btn-primary">Wyświetl listę zadań tego pracownika</a>
+  <div class="space"></div>
+
+  <div class="btn btn-danger" (click)="delete(employee.id)">X</div>
+
+
+</div>

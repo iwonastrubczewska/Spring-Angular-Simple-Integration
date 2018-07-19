@@ -1,0 +1,15 @@
+
+<div class="item-style">
+
+    <span><b>Zadanie: </b></span>{{task.toDo}} <br>
+    
+    <span><b> Deadline:</b></span>{{task.deadline}}<br>
+    <span><b> Pracownik odpowiedzialny: </b></span>{{task.employee.id}}. {{task.employee.name}} {{task.employee.surname}}
+ 
+  <br>
+  <br>
+
+    <a [routerLink]="['/task/update', task.id]" class="btn btn-primary">Edytuj</a>
+    <div class="space"></div>
+    <div class="btn btn-danger" (click)="delete(task.id)">X</div>
+  </div>
